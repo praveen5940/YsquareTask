@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login </title>
+<link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  
+  <div id ="div1">
+    <h1 class="Login1">Login</h1>
+    <form name="loginForm" method="post" action="">
+        userName &nbsp <input type="text" name="userName" id="userName"/><br><br>
+        password &nbsp  &nbsp<input type="password" name="password" id="password"/>&nbsp<br><br>
+       <input type="button" onclick="login(loginForm)" value="Login"/>
+    </form>
+  </div>
+
+  <script>
+
+function login(loginForm)
+{
+    if(loginForm.userName.value && loginForm.password.value)
+    {
+        var userName=document.getElementById("userName").value;
+        document.write('<html><body><h1><center>')
+            document.write("Ysquare Welcome You" + " ");
+            document.write(userName);
+            document.write('</center></h1></body></html>')
+        }
+        else
+        alert("please enter your userName & password");
+    }
+
+
+  </script>
+</body>
+</html>
